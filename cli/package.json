@@ -1,0 +1,22 @@
+{
+  "name": "@newsteam/cli",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.ts",
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "commander": "^9.2.0",
+    "flat-cache": "^3.0.4",
+    "fs-extra": "^10.1.0",
+    "globby": "^13.1.1",
+    "inquirer": "^8.2.4",
+    "rc-config-loader": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/flat-cache": "^2.0.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/inquirer": "^8.2.1"
+  }
+}

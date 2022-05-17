@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@newsteam",
+    "plugin:@next/next/recommended"
+  ],
+  "plugins": [
+    "only-warn"
+  ]
+}
