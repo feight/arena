@@ -13,6 +13,20 @@
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
+  "newsteam": {
+    "environments": [
+      {
+        "id": "production",
+        "project": "newsteam-stage",
+        "region": "europe-west1"
+      },
+      {
+        "id": "staging",
+        "project": "newsteam-stage",
+        "region": "europe-west1"
+      }
+    ]
+  },
   "devDependencies": {
     "@types/node": "17.0.33",
     "@types/react": "18.0.9",

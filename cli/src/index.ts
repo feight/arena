@@ -2,6 +2,7 @@
 
 import { Command } from "commander";
 
+import { deploy } from "./deploy";
 import { dev } from "./dev";
 
 
@@ -12,6 +13,11 @@ program
 .name("newsteam")
 .description("News Team cli")
 .version("0.0.0");
+
+
+program.command("deploy")
+.description("Deploy a site")
+.action(deploy);
 
 
 program.command("dev")

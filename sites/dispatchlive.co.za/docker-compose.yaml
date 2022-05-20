@@ -1,19 +1,19 @@
 version: "3.9"
 services:
 
-  businesslive.co.za:
+  www:
     build:
-      context: ./sites/businesslive.co.za
+      context: .
       target: dev
-    container_name: businesslive.co.za
+    container_name: www.dispatchlive.co.za
     entrypoint: npm run dev
     environment:
       PORT: "3001"
     ports:
       - 3001:3001
     volumes:
-      - ./sites/businesslive.co.za/src:/app/src:ro
+      - ./src:/app/src:ro
 
   redis:
     image: "redis:alpine"
-    container_name: redis
+    container_name: redis.dispatchlive.co.za

@@ -2,10 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 
 import styles from "../styles/Home.module.css";
-import { test } from "../../../../shared/test";
 
 import type { NextPage } from "next";
-
 
 const Home: NextPage = () => (
     <div className={ styles.container }>
@@ -22,8 +20,7 @@ const Home: NextPage = () => (
                 Welcome to
                 {" "}
                 <a href="https://nextjs.org">
-                    Next.js[][]
-                    { test }
+                    Next.js!
                 </a>
             </h1>
 

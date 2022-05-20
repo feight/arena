@@ -1,0 +1,15 @@
+steps:
+    - name: "gcr.io/cloud-builders/docker"
+      args:
+          - "build"
+          - "--tag=shared"
+          - "./shared"
+
+    - name: "gcr.io/cloud-builders/docker"
+      args:
+          - "build"
+          - "--tag=gcr.io/$PROJECT_ID/businesslive-co-za"
+          - "./sites/businesslive.co.za"
+
+images:
+    - "gcr.io/$PROJECT_ID/businesslive-co-za"

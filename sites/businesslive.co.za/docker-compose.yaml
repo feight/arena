@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+
+  www:
+    build:
+      context: .
+      target: dev
+    container_name: www.businesslive.co.za
+    entrypoint: npm run dev
+    environment:
+      PORT: "3001"
+    ports:
+      - 3001:3001
+    volumes:
+      - ./src:/newsteam/www/app/src:ro
+      - ./../../shared:/newsteam/shared:ro
